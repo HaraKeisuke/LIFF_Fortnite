@@ -10,6 +10,10 @@ const initializeApp = data => {
     .getElementById('openwindowbutton')
     .addEventListener('click', openURL('https://www.epicgames.com/fortnite'));
 
+  document
+    .getElementById('close')
+    .addEventListener('click', liff.closeWindow());
+
   // 落下地点をランダムで決めて落とす
   document.getElementById('decideFallPoint').addEventListener('click', () => {
     // liff.closeWindow();
