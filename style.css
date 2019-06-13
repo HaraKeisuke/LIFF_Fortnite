@@ -13,11 +13,10 @@ ul {
   text-align: center;
 }
 
-ul li {
+ul li, button {
   display: inline-block;
   text-align: center;
   width: 80%;
-  background-color: white;
   color: white;
   font-size: 21px;
   margin-bottom: 10px;
