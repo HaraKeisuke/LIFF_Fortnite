@@ -54,6 +54,10 @@ function initializeApp(data) {
             type: 'text',
             text: '『 ' + ary[Math.floor(Math.random() * ary.length)] + ' 』です！',
           },
+          {
+            type: 'text',
+            text: '続けて利用する場合は以下のリンクをクリック！\n line://app/1587298327-JKXxMDMy',
+          },
         ])
         .then(function() {
           liff.closeWindow();
