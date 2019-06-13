@@ -17,8 +17,12 @@ ul {
   user-select: none;
 }
 
+<<<<<<< HEAD
 ul li,
 button {
+=======
+ul li, button {
+>>>>>>> a251c3a6c9aa75ffced6039b7e79016dfb142c07
   display: inline-block;
   text-align: center;
   width: 80%;

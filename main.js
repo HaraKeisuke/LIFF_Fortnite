@@ -1,5 +1,4 @@
 window.onload = function(e) {
-  console.log('ロード');
   liff.init(function(data) {
     initializeApp(data);
   });
