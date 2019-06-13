@@ -18,32 +18,30 @@ function initializeApp(data) {
   });
 
   var ary = [
-    'ジャンク・ジャンクション',
-    'ブロック',
-    'レイジー・ラグーン',
-    'サニー・ステップス',
-    'ロンリー・ロッジ',
-    'ホーンテッド・ヒルズ',
-    'プレザント・パーク',
-    'ルート・レイク',
-    'スノビー・ショア',
-    'ティルテッド・タワー',
-    'ダスティ・ディボット',
-    'リテイル・ロー',
-    'シフティ・シャフト',
-    'ソルティ・スプリングス',
-    'フェイタル・フィールド',
-    'パラダイス・パームズ',
-    'ラッキー・ランディング',
-    'ハッピー・ハムレット',
-    'ポーラー・ピーク',
-    'フロスティ・フロイト',
+    ['ジャンク・ジャンクション', 'junkjunction.png'][('ブロック', 'block.png')],
+    ['レイジー・ラグーン', 'lazylagoon.png'],
+    ['プレッシャー・プラント', 'pressureplant.png'][('サニー・ステップス', 'sunnysteps.png')],
+    ['ロンリー・ロッジ', 'lonrylodge.png'],
+    ['ホーンテッド・ヒルズ', 'horntedhills.png'],
+    ['プレザント・パーク', 'presantpark.png'],
+    ['ルート・レイク', 'routerake.png'][('スノビー・ショア', 'snovyshore.png')],
+    ['ネオ・ティルテッド', 'neotilted.png'][('ダスティ・ディボット', 'dustydipot.png')],
+    ['メガモール', 'megamall.png'],
+    ['シフティ・シャフト', 'shiftyshaft.png'],
+    ['ソルティ・スプリングス', 'saltysprings.png'],
+    ['フェイタル・フィールド', 'fatalfield.png'],
+    ['パラダイス・パームズ', 'paradiseparms.png'],
+    ['ラッキー・ランディング', 'luckylanding.png'],
+    ['ハッピー・ハムレット', 'happyhamlet.png'],
+    ['ポーラー・ピーク', 'polerpiek.png'],
+    ['フロスティ・フロイト', 'flostyfloit.png'],
   ];
 
   // sendMessages call
   document
     .getElementById('decideFallPoint')
     .addEventListener('click', function() {
+      var island = ary[Math.floor(Math.random() * ary.length)];
       liff
         .sendMessages([
           {
@@ -52,7 +50,14 @@ function initializeApp(data) {
           },
           {
             type: 'text',
-            text: '『 ' + ary[Math.floor(Math.random() * ary.length)] + ' 』です！',
+            text: '『 ' + island[0] + ' 』です！',
+          },
+          {
+            type: 'image',
+            originalContentUrl:
+              'https://fortnite-tool.herokuapp.com/islands/' + island[1],
+            previewImageUrl:
+              'https://fortnite-tool.herokuapp.com/islands/' + island[1],
           },
           {
             type: 'text',
