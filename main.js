@@ -55,9 +55,9 @@ function initializeApp(data) {
           {
             type: 'image',
             originalContentUrl:
-              'https://fortnite-tool.herokuapp.com/islands/' + island[1],
+              'https://fortnite-tool.herokuapp.com/islands/original/' + island[1],
             previewImageUrl:
-              'https://fortnite-tool.herokuapp.com/islands/' + island[1],
+              'https://fortnite-tool.herokuapp.com/islands/small/' + island[1],
           },
           {
             type: 'text',
