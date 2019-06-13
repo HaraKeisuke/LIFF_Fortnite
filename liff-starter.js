@@ -4,10 +4,6 @@ window.onload = function (e) {
     });
 };
 
-const initializeApp = (data) => {
-
-};
-
 function initializeApp(data) {
     document.getElementById('languagefield').textContent = data.language;
     document.getElementById('viewtypefield').textContent = data.context.viewType;
