@@ -1,5 +1,5 @@
-window.onload = function(e) {
-  liff.init(function(data) {
+window.onload = e => {
+  liff.init(data => {
     initializeApp(data);
   });
 };
@@ -39,12 +39,11 @@ const initializeApp = data => {
       .sendMessages([
         {
           type: 'text',
-          text: ary[Math.floor(Math.random() * ary.length)],
+          text: '今回降りるべき場所は....',
         },
         {
-          type: 'sticker',
-          packageId: '2',
-          stickerId: '144',
+          type: 'text',
+          text: '『 ' + ary[Math.floor(Math.random() * ary.length)] + ' 』です！',
         },
       ])
       .then(function() {

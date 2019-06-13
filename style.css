@@ -2,6 +2,7 @@ html,
 body {
   margin: 0px;
   font-family: 'Sawarabi Gothic', cursive;
+  background-color: #2a2a2a;
 }
 ul {
   width: 100%;
@@ -16,7 +17,7 @@ ul li {
   display: inline-block;
   text-align: center;
   width: 80%;
-  background-color: #2a2a2a;
+  background-color: white;
   color: white;
   font-size: 21px;
   margin-bottom: 10px;
@@ -24,6 +25,24 @@ ul li {
   border-radius: 10px;
 }
 
+ul li:hover {
+  opacity: 0.9;
+}
+
 #decideFallPoint {
   background-color: #f1105d;
+}
+
+#openHP {
+  background-color: #009fda;
+}
+
+#close {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#close img {
+  width: 60px;
+  height: 60px;
 }
