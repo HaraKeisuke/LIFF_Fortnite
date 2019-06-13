@@ -11,13 +11,17 @@ ul {
   padding: 0px;
   list-style: none;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-ul li {
+ul li,
+button {
   display: inline-block;
   text-align: center;
   width: 80%;
-  background-color: white;
   color: white;
   font-size: 21px;
   margin-bottom: 10px;
