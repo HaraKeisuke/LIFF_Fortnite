@@ -67,7 +67,7 @@ function initializeApp(data) {
         ])
         .then(function() {
           gtag('event', 'button', {
-            event_category: 'click',
+            event_category: 'RandomIslandSelect',
             event_label: 'RandomIslandSelect',
             value: 'true',
           });
